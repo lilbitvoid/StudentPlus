@@ -1,0 +1,13 @@
+C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\bin\Debug\StudentPlus 2.0.exe.config
+C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\bin\Debug\StudentPlus 2.0.exe
+C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\bin\Debug\StudentPlus 2.0.pdb
+C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\obj\Debug\StudentPlus 2.0.csproj.AssemblyReference.cache
+C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\obj\Debug\StudentPlus_2._0.Form1.resources
+C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\obj\Debug\StudentPlus_2._0.Properties.Resources.resources
+C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\obj\Debug\StudentPlus 2.0.csproj.GenerateResource.cache
+C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\obj\Debug\StudentPlus 2.0.csproj.CoreCompileInputs.cache
+C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\obj\Debug\StudentPlus 2.0.exe
+C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\obj\Debug\StudentPlus 2.0.pdb
+C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\obj\Debug\StudentPlus_2._0.Form2.resources
+C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\bin\Debug\Database1.mdf
+C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\bin\Debug\Database1_log.ldf
