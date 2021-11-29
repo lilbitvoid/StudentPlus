@@ -13,6 +13,7 @@ namespace StudentPlus_2._0
 {
     public partial class Form1 : Form
     {
+
         private SqlConnection sqlConnection = null;
         
         private SqlDataAdapter sqlDataAdapter = null;
@@ -24,8 +25,8 @@ namespace StudentPlus_2._0
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string login = textBox1.Text;
-            string password = textBox1.Text;
+            string login = textBox_login.Text;
+            string password = textBox_login.Text;
 
             if (login == "Admin" & password == "Admin")
             {
@@ -38,15 +39,15 @@ namespace StudentPlus_2._0
             {
                 try
                 {
-                    String loginUser = textBox1.Text;
-                    String passUser = textBox2.Text;
+                    String loginUser = textBox_login.Text;
+                    String passUser = textBox_pass.Text;
 
                     sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\Database1.mdf;Integrated Security=True");
                     sqlConnection.Open();
 
                     DataTable table = new DataTable();
 
-                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
+                    sqlDataAdapter = new SqlDataAdapter();
 
                     SqlCommand command = new SqlCommand("SELECT * FROM Users WHERE Username = @login AND Password = @password", sqlConnection);
                     command.Parameters.Add("@login", SqlDbType.VarChar).Value = loginUser;
@@ -56,6 +57,7 @@ namespace StudentPlus_2._0
                     if (table.Rows.Count > 0)
                     {
                         this.Hide();
+                        AccesToken.accesToken = 0;
                         Form2 f1 = new Form2();
                         f1.ShowDialog();
                         this.Close();

@@ -31,17 +31,17 @@ namespace StudentPlus_2._0
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_ex = new System.Windows.Forms.Button();
+            this.btn_setting = new System.Windows.Forms.Button();
             this.btn_info = new System.Windows.Forms.Button();
+            this.btn_ex = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.btn_1 = new System.Windows.Forms.Button();
+            this.btn_stud = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.btn_setting = new System.Windows.Forms.Button();
+            this.textBox_search = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -57,17 +57,16 @@ namespace StudentPlus_2._0
             this.panel2.Controls.Add(this.btn_info);
             this.panel2.Controls.Add(this.btn_ex);
             this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.btn_1);
+            this.panel2.Controls.Add(this.btn_stud);
             this.panel2.Name = "panel2";
             // 
-            // btn_ex
+            // btn_setting
             // 
-            resources.ApplyResources(this.btn_ex, "btn_ex");
-            this.btn_ex.FlatAppearance.BorderSize = 0;
-            this.btn_ex.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_ex.Name = "btn_ex";
-            this.btn_ex.UseVisualStyleBackColor = true;
-            this.btn_ex.Click += new System.EventHandler(this.btn_ex_Click);
+            resources.ApplyResources(this.btn_setting, "btn_setting");
+            this.btn_setting.FlatAppearance.BorderSize = 0;
+            this.btn_setting.ForeColor = System.Drawing.Color.Black;
+            this.btn_setting.Name = "btn_setting";
+            this.btn_setting.UseVisualStyleBackColor = true;
             // 
             // btn_info
             // 
@@ -77,6 +76,15 @@ namespace StudentPlus_2._0
             this.btn_info.Name = "btn_info";
             this.btn_info.UseVisualStyleBackColor = true;
             this.btn_info.Click += new System.EventHandler(this.btn_info_Click);
+            // 
+            // btn_ex
+            // 
+            resources.ApplyResources(this.btn_ex, "btn_ex");
+            this.btn_ex.FlatAppearance.BorderSize = 0;
+            this.btn_ex.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_ex.Name = "btn_ex";
+            this.btn_ex.UseVisualStyleBackColor = true;
+            this.btn_ex.Click += new System.EventHandler(this.btn_ex_Click);
             // 
             // panel1
             // 
@@ -92,13 +100,13 @@ namespace StudentPlus_2._0
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
             this.label3.Name = "label3";
             // 
-            // btn_1
+            // btn_stud
             // 
-            resources.ApplyResources(this.btn_1, "btn_1");
-            this.btn_1.FlatAppearance.BorderSize = 0;
-            this.btn_1.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_1.Name = "btn_1";
-            this.btn_1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btn_stud, "btn_stud");
+            this.btn_stud.FlatAppearance.BorderSize = 0;
+            this.btn_stud.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_stud.Name = "btn_stud";
+            this.btn_stud.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -120,7 +128,7 @@ namespace StudentPlus_2._0
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(90)))));
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Controls.Add(this.textBox7);
+            this.panel3.Controls.Add(this.textBox_search);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Name = "panel3";
             // 
@@ -131,19 +139,11 @@ namespace StudentPlus_2._0
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
-            // textBox7
+            // textBox_search
             // 
-            resources.ApplyResources(this.textBox7, "textBox7");
-            this.textBox7.Name = "textBox7";
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
-            // 
-            // btn_setting
-            // 
-            resources.ApplyResources(this.btn_setting, "btn_setting");
-            this.btn_setting.FlatAppearance.BorderSize = 0;
-            this.btn_setting.ForeColor = System.Drawing.Color.Black;
-            this.btn_setting.Name = "btn_setting";
-            this.btn_setting.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.textBox_search, "textBox_search");
+            this.textBox_search.Name = "textBox_search";
+            this.textBox_search.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // Form2
             // 
@@ -171,14 +171,14 @@ namespace StudentPlus_2._0
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btn_1;
+        private System.Windows.Forms.Button btn_stud;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btn_info;
         private System.Windows.Forms.Button btn_ex;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox_search;
         private System.Windows.Forms.Button btn_setting;
     }
 }

@@ -30,9 +30,9 @@ namespace StudentPlus_2._0
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.textBox_login = new System.Windows.Forms.TextBox();
+            this.textBox_pass = new System.Windows.Forms.TextBox();
+            this.btn_aut = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -49,34 +49,34 @@ namespace StudentPlus_2._0
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBox_login
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(325, 117);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(227, 29);
-            this.textBox1.TabIndex = 1;
+            this.textBox_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_login.Location = new System.Drawing.Point(325, 117);
+            this.textBox_login.Name = "textBox_login";
+            this.textBox_login.Size = new System.Drawing.Size(227, 29);
+            this.textBox_login.TabIndex = 1;
             // 
-            // textBox2
+            // textBox_pass
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(325, 192);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(227, 29);
-            this.textBox2.TabIndex = 2;
+            this.textBox_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_pass.Location = new System.Drawing.Point(325, 192);
+            this.textBox_pass.Name = "textBox_pass";
+            this.textBox_pass.PasswordChar = '*';
+            this.textBox_pass.Size = new System.Drawing.Size(227, 29);
+            this.textBox_pass.TabIndex = 2;
             // 
-            // button1
+            // btn_aut
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(214)))), ((int)(((byte)(141)))));
-            this.button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(349, 256);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(187, 50);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Вход";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_aut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(214)))), ((int)(((byte)(141)))));
+            this.btn_aut.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn_aut.Location = new System.Drawing.Point(349, 256);
+            this.btn_aut.Name = "btn_aut";
+            this.btn_aut.Size = new System.Drawing.Size(187, 50);
+            this.btn_aut.TabIndex = 3;
+            this.btn_aut.Text = "Вход";
+            this.btn_aut.UseVisualStyleBackColor = false;
+            this.btn_aut.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -186,9 +186,9 @@ namespace StudentPlus_2._0
             this.ClientSize = new System.Drawing.Size(606, 380);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btn_aut);
+            this.Controls.Add(this.textBox_pass);
+            this.Controls.Add(this.textBox_login);
             this.Name = "Form1";
             this.Text = "StudentPlus: Авторизация";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -206,9 +206,9 @@ namespace StudentPlus_2._0
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox_login;
+        private System.Windows.Forms.TextBox textBox_pass;
+        private System.Windows.Forms.Button btn_aut;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;

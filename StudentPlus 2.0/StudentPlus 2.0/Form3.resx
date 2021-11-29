@@ -159,13 +159,13 @@
   </data>
   <data name="btn_info.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAEVSURBVDhPjZPBbcJAEEVXghsIkQ44EXKB5ECUEkjutACB
-        UjhBKAKJEhBKI0m4UETgBP/ZY2k9thFPemjH3llmd8fhBj35YTK+i7qcy4O8OP/kp2ROKQ/yW57kUg5l
-        w3yVK8m7vWRuDlYl+Sj7PKhgIJnDIrlKKPtf+uSOGfMsqWSaRAZ7pmzPwvR8yd90GMKT5JDY871wJuQ8
-        EnBNBByWZ2x6mpKcdwJ+CHjo2ZqeliRnRECTEJRtoWqBN0lOsgWgSbhnz8b0rOVPOkyZSa6Ge44pu8YX
-        eZaTJDJoCpqDJvGLxJDMnJ2s8SCmLVmE1bln9pm1MmPK5h3JzC2FSvhgaBIOKZY9U3bhn6vghLPPucuD
-        IiFcAdd9PXaChVs3AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAARVJREFUOE+Nk8FtwkAQRVeCGwiRDjgRcoHkQJQSSO60AIFSOEEoAokSEEojSbhQ
+        ROAE/9ljaT22EU96aMfeWWZ3x+EGPflhMr6LupzLg7w4/+SnZE4pD/JbnuRSDmXDfJUrybu9ZG4OViX5
+        KPs8qGAgmcMiuUoo+1/65I4Z8yypZJpEBnumbM/C9HzJ33QYwpPkkNjzvXAm5DwScE0EHJZnbHqakpx3
+        An4IeOjZmp6WJGdEQJMQlG2haoE3SU6yBaBJuGfPxvSs5U86TJlJroZ7jim7xhd5lpMkMmgKmoMm8YvE
+        kMycnazxIKYtWYTVuWf2mbUyY8rmHcnMLYVK+GBoEg4plj1TduGfq+CEs8+5y4MiIVwB1309doKFWzcA
+        AAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="panel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -196,7 +196,13 @@
         VOkJNRPz8kpyyVCaUA4/FY1F4mfajDDXJRYDeZNNv/oRDjdCWAjnHk8+L/zg2rtEAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="teachersBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>126, 17</value>
+  </metadata>
+  <metadata name="dBDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="teachersTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>302, 17</value>
   </metadata>
 </root>

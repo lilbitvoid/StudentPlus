@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace StudentPlus_2._0
 {
@@ -26,32 +20,39 @@ namespace StudentPlus_2._0
         {
             InitializeComponent();
         }
-        private void LoadData() 
+        private void LoadData()
         {
             try
             {
                 sqlDataAdapter = new SqlDataAdapter("SELECT *, 'Delete' as [Command] FROM Students", sqlConnection);
                 sqlBuilder = new SqlCommandBuilder(sqlDataAdapter);
-                
+
                 sqlBuilder.GetInsertCommand();
                 sqlBuilder.GetUpdateCommand();
                 sqlBuilder.GetDeleteCommand();
-                
+
                 dataSet = new DataSet();
 
                 sqlDataAdapter.Fill(dataSet, "Students");
 
                 dataGridView1.DataSource = dataSet.Tables["Students"];
 
+                dataGridView1.Columns[0].HeaderText = "Код записи";
+                dataGridView1.Columns[1].HeaderText = "Имя студента";
+                dataGridView1.Columns[2].HeaderText = "Фамилия студента";
+                dataGridView1.Columns[3].HeaderText = "Отчество студента";
+                dataGridView1.Columns[4].HeaderText = "Дата урока";
+                dataGridView1.Columns[5].HeaderText = "Код группы";
+
                 for (int i = 0; i < dataGridView1.Rows.Count; i++)
                 {
                     DataGridViewLinkCell linkCell = new DataGridViewLinkCell();
-                    
+
                     dataGridView1[6, i] = linkCell;
 
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -94,7 +95,7 @@ namespace StudentPlus_2._0
         {
             try
             {
-                if(e.ColumnIndex == 6)
+                if (e.ColumnIndex == 6)
                 {
                     string task = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
 
@@ -150,7 +151,7 @@ namespace StudentPlus_2._0
                     }
 
                     ReloadData();
-                } 
+                }
             }
             catch (Exception ex)
             {
@@ -165,18 +166,19 @@ namespace StudentPlus_2._0
                 if (newRowAdding == false)
                 {
                     newRowAdding = true;
+
                     int lastRow = dataGridView1.Rows.Count - 2;
-                    
+
                     DataGridViewRow row = dataGridView1.Rows[lastRow];
-                    
+
                     DataGridViewLinkCell linkCell = new DataGridViewLinkCell();
-                    
+
                     dataGridView1[6, lastRow] = linkCell;
-                    
+
                     row.Cells["Command"].Value = "Insert";
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Программист балбес", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -191,7 +193,7 @@ namespace StudentPlus_2._0
                     int rowIndex = dataGridView1.SelectedCells[0].RowIndex;
 
                     DataGridViewRow editingRow = dataGridView1.Rows[rowIndex];
-                    
+
                     DataGridViewLinkCell linkCell = new DataGridViewLinkCell();
 
                     dataGridView1[6, rowIndex] = linkCell;
@@ -201,7 +203,7 @@ namespace StudentPlus_2._0
 
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Программист балбес", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -222,7 +224,8 @@ namespace StudentPlus_2._0
         // Плохо работает из за метода!!!
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
-            
+            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = $"Name LIKE '%{textBox_search.Text}%'";
         }
+
     }
 }

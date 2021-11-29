@@ -137,51 +137,45 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btn_setting.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAASnSURBVGhD7Zh3yH5jHIdfe2WPzAiZEcnOlmSP8A8iO5GQGSJ7pCRl/qMQsvdeSbYoW7JC9pZ5
-        Xb/f86mv03me9+E5b7+3vFdd9b7fc5/73Pdz7vG9z9gUU0zRObPigXh8i8fhyjipOQz/GuBbOKm5DNsa
-        Xp0LZyhL4V44z7T//sltmIb6Nvbo+Uwvpitgk41x6+l/Tiyr4CdoQxwOq2LlBfTanzingR71zWxqoMcs
-        eC5a3msX4ISxOn6GaYh+jduhLIqfo/EvDBROxtxzjAFYEO/DxOPZ2Dk2/lPMQ/5o/G1DfimxV7CyH+aa
-        vorvlP9rfdppJ1bD2viX0XF8d4k1ddmsLIm+lbayX+I2eHSJaWedqL+UjV8EZWY8BzN+v8OLcV1swyFz
-        MD6Hqc83sSKGZid2xJF5H1PhFQYaOClt2MLT/huOrfAAbK5ka2MdirvgyGyEv2IqPQTHYyZ02KyFK2Fd
-        kfrhD/Au5jk3o/V0wqGYiu2M63YbS+Ml+BGmfO65H3fGNkxBHsWUfxHnxk65HPOAJww0cOP6CVOmnw9i
-        5lHYDXPdpXhZ7JzDMQ+50UDhNMw19Rd/CK9ByzbfyNvovhE2wFxzg+xs6Dh2XTI3wdcxD1kPw66YlUiv
-        xNo4sUF7YjY6dcjUhvpWc+1IXBOb9QzNpVgfVnV8hjnwPcy1k3AQy2PdU8ypwt6YePVnfAmbaUtflsC2
-        iqJjPeyOiT9iYAhcGnPPkwZ6zIvNVKV6Hg6FEyg3uXvegSZjp+D26AYWrsaU3cHAkDgHvOd3XMhAj+Xw
-        CDwfr8Ukh+omORS1A6bHg3gcU3Z+A0NSO76OgT5shik3IR1wbFrOZKy+mfG4CPOMLQ30YeQO3IPm7P1w
-        c0rZZQwMyU2Y+0wW+7Etptx/6oA6Tj9GT1UukTXn8TCScu4Tw+AO6znCe77F2THsiy4Gb+CPmLp16A44
-        lmvu07RW5H6Q+Ae4AI7HGZh7rjPQwwn8G+Za0xNxaHx1V6E5vymvOXsq8khp7hLqqephnA/7sQ/m8OKb
-        9aAUTsDUY0bq/uIyez2eiiPnRi6neYANCebztYM+eH/M23Byr482JGX0dAxuiB+icXf1Cfl+ZCqQhzeT
-        OVeLjOvqN9g2HJ1LNY2oydyzBrrG11c3lTp2g7/aY5gybboxmpo3cS4ln3KI7YSdYoPTCE9og5KsLdBc
-        6mm07Gt4K3pqG7TZ1cnt8bTOj5E4FlOxS5vHvonAuXI75llv4r/Z3fvyPabSOvHEz4QX4r3oF7hhdmMz
-        Ut+Q92xooLAYmn3meb61kbkFU+EPuDmKO+/zmGvqCnQW+gWiicdJl9y61jvBD0Lxx3gAc8233ckwalZs
-        J47Cmtc3vQErfmppKxfNdpuNdy51RrMTVXdgzwimAFlJTJcr9aOAHT8T3SgTq3be+OBmcxfWhz2Fi2PI
-        6czDfcUG5x6PoMExXvcJGz8oOx0Z38Sd6FrtRKyJmLj1pzF1Hni4T9xdueImaHryFU7IL9+GHWmjpgv+
-        7acYrV/3/HbUxJR9tul/zlhcUtPQNk3gaiI46fCb56CU2B150uNXDc+5TdfAQae7KaaY4v/F2NjfBrkb
-        e/bMSUAAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAABKdJREFUaEPt
+        mHfIfmMch197ZY/MCJkRyc6WZI/wDyI7kZAZInukJGX+oxCy915JtihbskL2lnldv9/zqa/TeZ734Tlv
+        v7e8V131vt9zn/vc93Pu8b3P2BRTTNE5s+KBeHyLx+HKOKk5DP8a4Fs4qbkM2xpenQtnKEvhXjjPtP/+
+        yW2Yhvo29uj5TC+mK2CTjXHr6X9OLKvgJ2hDHA6rYuUF9NqfOKeBHvXNbGqgxyx4LlreaxfghLE6foZp
+        iH6N26Esip+j8S8MFE7G3HOMAVgQ78PE49nYOTb+U8xD/mj8bUN+KbFXsLIf5pq+iu+U/2t92mknVsPa
+        +JfRcXx3iTV12awsib6VtrJf4jZ4dIlpZ52ov5SNXwRlZjwHM36/w4txXWzDIXMwPoepzzexIoZmJ3bE
+        kXkfU+EVBho4KW3YwtP+G46t8ABsrmRrYx2Ku+DIbIS/Yio9BMdjJnTYrIUrYV2R+uEP8C7mOTej9XTC
+        oZiK7YzrdhtL4yX4EaZ87rkfd8Y2TEEexZR/EefGTrkc84AnDDRw4/oJU6afD2LmUdgNc92leFnsnMMx
+        D7nRQOE0zDX1F38Ir0HLNt/I2+i+ETbAXHOD7GzoOHZdMjfB1zEPWQ/DrpiVSK/E2jixQXtiNjp1yNSG
+        +lZz7UhcE5v1DM2lWB9WdXyGOfA9zLWTcBDLY91TzKnC3ph49Wd8CZtpS1+WwLaKomM97I6JP2JgCFwa
+        c8+TBnrMi81UpXoeDoUTKDe5e96BJmOn4PboBhauxpTdwcCQOAe853dcyECP5fAIPB+vxSSH6iY5FLUD
+        pseDeBxTdn4DQ1I7vo6BPmyGKTchHXBsWs5krL6Z8bgI84wtDfRh5A7cg+bs/XBzStllDAzJTZj7TBb7
+        sS2m3H/qgDpOP0ZPVS6RNefxMJJy7hPD4A7rOcJ7vsXZMeyLLgZv4I+YunXoDjiWa+7TtFbkfpD4B7gA
+        jscZmHuuM9DDCfwb5lrTE3FofHVXoTm/Ka85eyrySGnuEuqp6mGcD/uxD+bw4pv1oBROwNRjRur+4jJ7
+        PZ6KI+dGLqd5gA0J5vO1gz54f8zbcHKvjzYkZfR0DG6IH6Jxd/UJ+X5kKpCHN5M5V4uM6+o32DYcnUs1
+        jajJ3LMGusbXVzeVOnaDv9pjmDJtujGamjdxLiWfcojthJ1ig9MIT2iDkqwt0FzqabTsa3gremobtNnV
+        ye3xtM6PkTgWU7FLm8e+icC5cjvmWW/iv9nd+/I9ptI68cTPhBfivegXuGF2YzNS35D3bGigsBiafeZ5
+        vrWRuQVT4Q+4OYo77/OYa+oKdBb6BaKJx0mX3LrWO8EPQvHHeABzzbfdyTBqVmwnjsKa1ze9ASt+amkr
+        F812m413LnVGsxNVd2DPCKYAWUlMlyv1o4AdPxPdKBOrdt744GZzF9aHPYWLY8jpzMN9xQbnHo+gwTFe
+        9wkbPyg7HRnfxJ3oWu1ErImYuPWnMXUeeLhP3F254iZoevIVTsgv34YdaaOmC/7tpxitX/f8dtTElH22
+        6X/OWFxS09A2TeBqIjjp8JvnoJTYHXnS41cNz7lN18BBp7spppji/8XY2N8GuRt79sxJQAAAAABJRU5E
+        rkJggg==
 </value>
   </data>
   <data name="btn_setting.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_setting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 397</value>
-  </data>
   <data name="btn_setting.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 54</value>
   </data>
-  <data name="btn_setting.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
   <data name="btn_info.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAEVSURBVDhPjZPBbcJAEEVXghsIkQ44EXKB5ECUEkjutACB
-        UjhBKAKJEhBKI0m4UETgBP/ZY2k9thFPemjH3llmd8fhBj35YTK+i7qcy4O8OP/kp2ROKQ/yW57kUg5l
-        w3yVK8m7vWRuDlYl+Sj7PKhgIJnDIrlKKPtf+uSOGfMsqWSaRAZ7pmzPwvR8yd90GMKT5JDY871wJuQ8
-        EnBNBByWZ2x6mpKcdwJ+CHjo2ZqeliRnRECTEJRtoWqBN0lOsgWgSbhnz8b0rOVPOkyZSa6Ge44pu8YX
-        eZaTJDJoCpqDJvGLxJDMnJ2s8SCmLVmE1bln9pm1MmPK5h3JzC2FSvhgaBIOKZY9U3bhn6vghLPPucuD
-        IiFcAdd9PXaChVs3AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAARVJREFUOE+Nk8FtwkAQRVeCGwiRDjgRcoHkQJQSSO60AIFSOEEoAokSEEojSbhQ
+        ROAE/9ljaT22EU96aMfeWWZ3x+EGPflhMr6LupzLg7w4/+SnZE4pD/JbnuRSDmXDfJUrybu9ZG4OViX5
+        KPs8qGAgmcMiuUoo+1/65I4Z8yypZJpEBnumbM/C9HzJ33QYwpPkkNjzvXAm5DwScE0EHJZnbHqakpx3
+        An4IeOjZmp6WJGdEQJMQlG2haoE3SU6yBaBJuGfPxvSs5U86TJlJroZ7jim7xhd5lpMkMmgKmoMm8YvE
+        kMycnazxIKYtWYTVuWf2mbUyY8rmHcnMLYVK+GBoEg4plj1TduGfq+CEs8+5y4MiIVwB1309doKFWzcA
+        AAAASUVORK5CYII=
 </value>
   </data>
   <data name="btn_info.Location" type="System.Drawing.Point, System.Drawing">
@@ -203,7 +197,25 @@
         rkJggg==
 </value>
   </data>
-  <data name="btn_1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_ex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 190</value>
+  </data>
+  <data name="btn_ex.Text" xml:space="preserve">
+    <value>Расписание экзаменов</value>
+  </data>
+  <data name="btn_stud.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btn_stud.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btn_stud.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_stud.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="btn_stud.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAoRJREFUaEPt
         mFmKFEEQhhtFX9Q5ioqCy5xB3JcHPY+oqOB2ApcjufukHsAFZsT1/6ALgqAqt8rKaqQ++GC6uzIroiq3
@@ -219,6 +231,18 @@
         Vusok2r3rdZRJtXuazeWlufrave15/BosbQic913YeE/YrX6B9GzCBu2FvWWAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btn_stud.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btn_stud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 54</value>
+  </data>
+  <data name="btn_stud.Text" xml:space="preserve">
+    <value>Отсутствующие студенты</value>
+  </data>
+  <data name="btn_stud.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>115, -1</value>
   </data>
@@ -230,6 +254,9 @@
         tRR8O0p68sFCbkNospPzEL5T+AJKoNtWCRVJCV2/ysCcGRXdTjGTySYCc2ZUdPs1E16eyrtcs2HBnMmE
         VOkJNRPz8kpyyVCaUA4/FY1F4mfajDDXJRYDeZNNv/oRDjdCWAjnHk8+L/zg2rtEAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="textBox_search.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>StudentPlus: Журнал отсутсвующих студентов</value>

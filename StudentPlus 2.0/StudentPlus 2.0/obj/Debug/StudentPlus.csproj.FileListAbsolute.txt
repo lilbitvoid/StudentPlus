@@ -16,3 +16,4 @@ C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\obj\Debug\StudentPlus
 C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\bin\Debug\ru\StudentPlus 2.0.resources.dll
 C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\obj\Debug\StudentPlus_2._0.Form2.ru.resources
 C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\obj\Debug\ru\StudentPlus 2.0.resources.dll
+C:\Users\Ivan\source\repos\StudentPlus 2.0\StudentPlus 2.0\obj\Debug\StudentPlus_2._0.Form4.resources

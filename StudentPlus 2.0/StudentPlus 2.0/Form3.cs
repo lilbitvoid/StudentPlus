@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace StudentPlus_2._0
 {
@@ -28,10 +22,16 @@ namespace StudentPlus_2._0
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "dBDataSet.Teachers". При необходимости она может быть перемещена или удалена.
+            this.teachersTableAdapter.Fill(this.dBDataSet.Teachers);
             sqlConnection = new SqlConnection(@"Data Source=DESKTOP-IOIHD8T\SQLEXPRESS;Initial Catalog=DB;Integrated Security=True");
             sqlConnection.Open();
             LoadData();
-
+            if (AccesToken.accesToken == 0)
+            {
+                tabControl_ex.Visible = false;
+                btn_setting.Visible = false;
+            }
         }
         private void LoadData()
         {
@@ -42,13 +42,18 @@ namespace StudentPlus_2._0
             sqlBuilder.GetUpdateCommand();
             sqlBuilder.GetDeleteCommand();
 
-            DataTable table = new DataTable();
-
             dataSet = new DataSet();
 
             sqlDataAdapter.Fill(dataSet, "Exams");
 
             dataGridView1.DataSource = dataSet.Tables["Exams"];
+
+            dataGridView1.Columns[0].HeaderText = "Код экзамена";
+            dataGridView1.Columns[1].HeaderText = "Название экзамена";
+            dataGridView1.Columns[2].HeaderText = "Учитель";
+            dataGridView1.Columns[3].HeaderText = "Колличество допущенных студентов";
+            dataGridView1.Columns[4].HeaderText = "Дата проведения";
+            dataGridView1.Columns[5].HeaderText = "Описание";
         }
 
         private void ReloadData()
@@ -78,36 +83,39 @@ namespace StudentPlus_2._0
         {
             DataRow row = dataSet.Tables["Exams"].NewRow();
 
-            row["Name_of_exam"] = textBox1.Text;
-            row["Teacher"] = textBox2.Text;
-            row["Count_students"] = textBox3.Text;
-            row["Date_of_exams"] = Convert.ToDateTime(textBox4.Text);
-            row["Description"] = textBox5.Text;
+            row["Name_of_exam"] = textBox_name.Text;
+            row["Teacher"] = comboBox_teach.SelectedValue;
+            row["Count_students"] = textBox_cout_stud.Text;
+            row["Date_of_exams"] = Convert.ToDateTime(textBox_date.Text);
+            row["Description"] = textBox_dec.Text;
 
             dataSet.Tables["Exams"].Rows.Add(row);
 
             sqlDataAdapter.Update(dataSet, "Exams");
-            ReloadData();
 
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
-            textBox4.Text = "";
-            textBox5.Text = "";
-        }
+
+
+            textBox_name.Clear();
+            textBox_cout_stud.Clear();
+            textBox_date.Clear();
+            textBox_dec.Clear();
+
+            ReloadData();
+        
+        }            
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
             if (MessageBox.Show("Удалить эту строку?", "Удаление", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                int rowIndex = dataGridView1.CurrentCell.RowIndex;                
+                int rowIndex = dataGridView1.CurrentCell.RowIndex;
 
-                    dataSet.Tables["Exams"].Rows[rowIndex].Delete();
+                dataSet.Tables["Exams"].Rows[rowIndex].Delete();
 
-                    sqlDataAdapter.Update(dataSet, "Exams");
-                
-                    ReloadData();
+                sqlDataAdapter.Update(dataSet, "Exams");
+
+                ReloadData();
             }
         }
 
@@ -115,29 +123,26 @@ namespace StudentPlus_2._0
         {
             int rowIndex = dataGridView1.CurrentCell.RowIndex;
 
-            textBox11.Text = Convert.ToString(dataGridView1.Rows[rowIndex].Cells["Name_of_exam"].Value);
-            textBox12.Text = Convert.ToString(dataGridView1.Rows[rowIndex].Cells["Teacher"].Value);
-            textBox10.Text = Convert.ToString(dataGridView1.Rows[rowIndex].Cells["Count_students"].Value);
-            textBox8.Text = Convert.ToString(dataGridView1.Rows[rowIndex].Cells["Date_of_exams"].Value);
-            textBox9.Text = Convert.ToString(dataGridView1.Rows[rowIndex].Cells["Description"].Value);
+            textBox_name_update.Text = Convert.ToString(dataGridView1.Rows[rowIndex].Cells["Name_of_exam"].Value);
+            textBox_count_stud_update.Text = Convert.ToString(dataGridView1.Rows[rowIndex].Cells["Count_students"].Value);
+            textBox_date_update.Text = Convert.ToString(dataGridView1.Rows[rowIndex].Cells["Date_of_exams"].Value);
+            textBox_desc_update.Text = Convert.ToString(dataGridView1.Rows[rowIndex].Cells["Description"].Value);
         }
         //Доделать
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
-            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = $"Name_of_exam LIKE '%{textBox7.Text}%'";
-            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = $"Teacher LIKE '%{textBox7.Text}%'";
-            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = $"Count_students LIKE '%{textBox7.Text}%'";            
+        (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = $"Name_of_exam LIKE '%{textBox_search.Text}%'";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             int rowIndex = dataGridView1.CurrentCell.RowIndex;
 
-            dataSet.Tables["Exams"].Rows[rowIndex]["Name_of_exam"] = textBox11.Text;
-            dataSet.Tables["Exams"].Rows[rowIndex]["Teacher"] = Convert.ToInt32(textBox12.Text);
-            dataSet.Tables["Exams"].Rows[rowIndex]["Count_students"] = textBox10.Text;
-            dataSet.Tables["Exams"].Rows[rowIndex]["Date_of_exams"] = Convert.ToDateTime(textBox8.Text);
-            dataSet.Tables["Exams"].Rows[rowIndex]["Description"] = textBox9.Text;
+            dataSet.Tables["Exams"].Rows[rowIndex]["Name_of_exam"] = textBox_name_update.Text;
+            dataSet.Tables["Exams"].Rows[rowIndex]["Teacher"] = Convert.ToInt32(comboBox_name_teach_update.SelectedValue); //Convert.ToInt32(textBox12.Text);
+            dataSet.Tables["Exams"].Rows[rowIndex]["Count_students"] = textBox_count_stud_update.Text;
+            dataSet.Tables["Exams"].Rows[rowIndex]["Date_of_exams"] = Convert.ToDateTime(textBox_date_update.Text);
+            dataSet.Tables["Exams"].Rows[rowIndex]["Description"] = textBox_desc_update.Text;
 
             sqlDataAdapter.Update(dataSet, "Exams");
             ReloadData();
