@@ -79,5 +79,15 @@ namespace StudentPlus_2._0
             sqlConnection = new SqlConnection(@"Data Source=DESKTOP-IOIHD8T\SQLEXPRESS;Initial Catalog=DB;Integrated Security=True");
             sqlConnection.Open();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                textBox_pass.PasswordChar = '\0';
+            }
+            else
+                textBox_pass.PasswordChar = '*';
+        }
     }
 }

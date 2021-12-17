@@ -55,7 +55,6 @@ namespace StudentPlus_2._0
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox_date = new System.Windows.Forms.TextBox();
             this.textBox_dec = new System.Windows.Forms.TextBox();
             this.textBox_cout_stud = new System.Windows.Forms.TextBox();
             this.textBox_name = new System.Windows.Forms.TextBox();
@@ -67,13 +66,14 @@ namespace StudentPlus_2._0
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.btn_update = new System.Windows.Forms.Button();
-            this.textBox_date_update = new System.Windows.Forms.TextBox();
             this.textBox_desc_update = new System.Windows.Forms.TextBox();
             this.textBox_count_stud_update = new System.Windows.Forms.TextBox();
             this.textBox_name_update = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.teachersTableAdapter = new StudentPlus_2._0.DBDataSetTableAdapters.TeachersTableAdapter();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -272,6 +272,7 @@ namespace StudentPlus_2._0
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.dateTimePicker1);
             this.tabPage1.Controls.Add(this.comboBox_teach);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.label5);
@@ -279,7 +280,6 @@ namespace StudentPlus_2._0
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.textBox_date);
             this.tabPage1.Controls.Add(this.textBox_dec);
             this.tabPage1.Controls.Add(this.textBox_cout_stud);
             this.tabPage1.Controls.Add(this.textBox_name);
@@ -367,14 +367,6 @@ namespace StudentPlus_2._0
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox_date
-            // 
-            this.textBox_date.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBox_date.Location = new System.Drawing.Point(372, 19);
-            this.textBox_date.Name = "textBox_date";
-            this.textBox_date.Size = new System.Drawing.Size(133, 20);
-            this.textBox_date.TabIndex = 15;
-            // 
             // textBox_dec
             // 
             this.textBox_dec.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -402,6 +394,7 @@ namespace StudentPlus_2._0
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.maskedTextBox1);
             this.tabPage3.Controls.Add(this.comboBox_name_teach_update);
             this.tabPage3.Controls.Add(this.label9);
             this.tabPage3.Controls.Add(this.label10);
@@ -409,7 +402,6 @@ namespace StudentPlus_2._0
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Controls.Add(this.label13);
             this.tabPage3.Controls.Add(this.btn_update);
-            this.tabPage3.Controls.Add(this.textBox_date_update);
             this.tabPage3.Controls.Add(this.textBox_desc_update);
             this.tabPage3.Controls.Add(this.textBox_count_stud_update);
             this.tabPage3.Controls.Add(this.textBox_name_update);
@@ -486,14 +478,6 @@ namespace StudentPlus_2._0
             this.btn_update.UseVisualStyleBackColor = true;
             this.btn_update.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox_date_update
-            // 
-            this.textBox_date_update.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBox_date_update.Location = new System.Drawing.Point(372, 19);
-            this.textBox_date_update.Name = "textBox_date_update";
-            this.textBox_date_update.Size = new System.Drawing.Size(133, 20);
-            this.textBox_date_update.TabIndex = 26;
-            // 
             // textBox_desc_update
             // 
             this.textBox_desc_update.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -544,6 +528,22 @@ namespace StudentPlus_2._0
             // 
             this.teachersTableAdapter.ClearBeforeFill = true;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(372, 19);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(132, 20);
+            this.dateTimePicker1.TabIndex = 24;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(374, 19);
+            this.maskedTextBox1.Mask = "00/00/0000 90:00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(131, 20);
+            this.maskedTextBox1.TabIndex = 35;
+            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -589,7 +589,6 @@ namespace StudentPlus_2._0
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox textBox_dec;
-        private System.Windows.Forms.TextBox textBox_date;
         private System.Windows.Forms.TextBox textBox_cout_stud;
         private System.Windows.Forms.TextBox textBox_name;
         private System.Windows.Forms.Button button1;
@@ -611,7 +610,6 @@ namespace StudentPlus_2._0
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btn_update;
-        private System.Windows.Forms.TextBox textBox_date_update;
         private System.Windows.Forms.TextBox textBox_desc_update;
         private System.Windows.Forms.TextBox textBox_count_stud_update;
         private System.Windows.Forms.TextBox textBox_name_update;
@@ -622,5 +620,7 @@ namespace StudentPlus_2._0
         private System.Windows.Forms.BindingSource teachersBindingSource;
         private DBDataSetTableAdapters.TeachersTableAdapter teachersTableAdapter;
         private System.Windows.Forms.ComboBox comboBox_name_teach_update;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }

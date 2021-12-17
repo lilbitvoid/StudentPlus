@@ -117,23 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_setting.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_setting.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btn_setting.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="btn_setting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="btn_setting.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btn_setting.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -161,12 +144,6 @@
         rkJggg==
 </value>
   </data>
-  <data name="btn_setting.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_setting.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 54</value>
-  </data>
   <data name="btn_info.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -177,12 +154,6 @@
         kMycnazxIKYtWYTVuWf2mbUyY8rmHcnMLYVK+GBoEg4plj1TduGfq+CEs8+5y4MiIVwB1309doKFWzcA
         AAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="btn_info.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 429</value>
-  </data>
-  <data name="btn_info.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 22</value>
   </data>
   <data name="btn_ex.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -196,24 +167,6 @@
         n5DkUH+JSgkNbYhmF51KkCIlaXaEzeUL0cRy0l2eXCHfiCYYywPSWX7bfgE/rt5Z5ikEYgAAAABJRU5E
         rkJggg==
 </value>
-  </data>
-  <data name="btn_ex.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 190</value>
-  </data>
-  <data name="btn_ex.Text" xml:space="preserve">
-    <value>Расписание экзаменов</value>
-  </data>
-  <data name="btn_stud.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btn_stud.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="btn_stud.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_stud.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="btn_stud.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -231,21 +184,6 @@
         Vusok2r3rdZRJtXuazeWlufrave15/BosbQic913YeE/YrX6B9GzCBu2FvWWAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btn_stud.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="btn_stud.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 54</value>
-  </data>
-  <data name="btn_stud.Text" xml:space="preserve">
-    <value>Отсутствующие студенты</value>
-  </data>
-  <data name="btn_stud.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, -1</value>
-  </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -254,11 +192,5 @@
         tRR8O0p68sFCbkNospPzEL5T+AJKoNtWCRVJCV2/ysCcGRXdTjGTySYCc2ZUdPs1E16eyrtcs2HBnMmE
         VOkJNRPz8kpyyVCaUA4/FY1F4mfajDDXJRYDeZNNv/oRDjdCWAjnHk8+L/zg2rtEAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="textBox_search.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>StudentPlus: Журнал отсутсвующих студентов</value>
   </data>
 </root>

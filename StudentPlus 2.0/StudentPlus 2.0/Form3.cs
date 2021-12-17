@@ -86,7 +86,7 @@ namespace StudentPlus_2._0
             row["Name_of_exam"] = textBox_name.Text;
             row["Teacher"] = comboBox_teach.SelectedValue;
             row["Count_students"] = textBox_cout_stud.Text;
-            row["Date_of_exams"] = Convert.ToDateTime(textBox_date.Text);
+            row["Date_of_exams"] = dateTimePicker1.Value;
             row["Description"] = textBox_dec.Text;
 
             dataSet.Tables["Exams"].Rows.Add(row);
@@ -97,7 +97,6 @@ namespace StudentPlus_2._0
 
             textBox_name.Clear();
             textBox_cout_stud.Clear();
-            textBox_date.Clear();
             textBox_dec.Clear();
 
             ReloadData();
@@ -125,10 +124,9 @@ namespace StudentPlus_2._0
 
             textBox_name_update.Text = Convert.ToString(dataGridView1.Rows[rowIndex].Cells["Name_of_exam"].Value);
             textBox_count_stud_update.Text = Convert.ToString(dataGridView1.Rows[rowIndex].Cells["Count_students"].Value);
-            textBox_date_update.Text = Convert.ToString(dataGridView1.Rows[rowIndex].Cells["Date_of_exams"].Value);
+            maskedTextBox1.Text = Convert.ToString(dataGridView1.Rows[rowIndex].Cells["Date_of_exams"].Value);
             textBox_desc_update.Text = Convert.ToString(dataGridView1.Rows[rowIndex].Cells["Description"].Value);
         }
-        //Доделать
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
         (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = $"Name_of_exam LIKE '%{textBox_search.Text}%'";
@@ -141,7 +139,7 @@ namespace StudentPlus_2._0
             dataSet.Tables["Exams"].Rows[rowIndex]["Name_of_exam"] = textBox_name_update.Text;
             dataSet.Tables["Exams"].Rows[rowIndex]["Teacher"] = Convert.ToInt32(comboBox_name_teach_update.SelectedValue); //Convert.ToInt32(textBox12.Text);
             dataSet.Tables["Exams"].Rows[rowIndex]["Count_students"] = textBox_count_stud_update.Text;
-            dataSet.Tables["Exams"].Rows[rowIndex]["Date_of_exams"] = Convert.ToDateTime(textBox_date_update.Text);
+            dataSet.Tables["Exams"].Rows[rowIndex]["Date_of_exams"] = maskedTextBox1.Text;
             dataSet.Tables["Exams"].Rows[rowIndex]["Description"] = textBox_desc_update.Text;
 
             sqlDataAdapter.Update(dataSet, "Exams");

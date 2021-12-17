@@ -20,6 +20,18 @@ namespace StudentPlus_2._0
         {
             InitializeComponent();
         }
+       private void countStud()
+        {
+            /*SqlDataAdapter studDataAdapter = new SqlDataAdapter();
+            DataTable countStudTable = new DataTable();
+            SqlCommand command = new SqlCommand("SELECT * FROM Students WHERE Date_of_lesson = @date", sqlConnection);
+            command.Parameters.Add("@date", SqlDbType.VarChar).Value = Convert.ToString(DateTime.Now.Date);
+            studDataAdapter.SelectCommand = command;
+            studDataAdapter.Fill(countStudTable);
+            */
+            textBox1.Text = Convert.ToString(dataSet.Tables["Students"].Rows.Count);
+        }
+
         private void LoadData()
         {
             try
@@ -73,6 +85,7 @@ namespace StudentPlus_2._0
                     dataGridView1[6, i] = linkCell;
 
                 }
+                countStud();
             }
             catch (Exception ex)
             {
@@ -135,6 +148,8 @@ namespace StudentPlus_2._0
                         sqlDataAdapter.Update(dataSet, "Students");
 
                         newRowAdding = false;
+
+                        
                     }
                     else if (task == "Update")
                     {
